@@ -53,6 +53,7 @@ body {
 
  .header {
     background: var(--white);
+    border-bottom: 1px solid #e7e9fc
    
  }
 
@@ -64,6 +65,7 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--iris);
+   margin-right: 76px
  }
 
  .logo-span {
@@ -91,7 +93,7 @@ body {
 .menu-list-nav {
    display: flex;
    gap: 40px;
-   padding: 24px 0;
+   padding: 24px 0 24px;
 }
 
 .header-nav {
@@ -135,14 +137,14 @@ body {
  /*SECTION 1*/
 
   .hero-title {
-     width: 497px;
+   max-width: 496px;
      font-weight: 700;
      line-height: 1.07;
      text-align: center;
      letter-spacing: 0.02em;
      font-size: 56px;
      color: #fff;
-     padding-top: 188px;
+   padding: 188px 0;
      
   }
 
@@ -153,15 +155,10 @@ body {
 
 
  .button {
-   display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      flex-direction: row;
-      gap: 10px;
-      border-radius: 4px;
-         padding: 16px 32px;
-         width: 169px;
-         height: 56px;
+    display: block;
+    max-width: 169px;
+    height: 56px;
+    border: none;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
@@ -169,7 +166,8 @@ body {
     color: #fff;
     cursor: pointer;
     background-color: #4d5ae5;
-   margin-top: 48px;
+    border-radius: 4px;
+  
    
  }
 
@@ -187,8 +185,23 @@ body {
  }
 /*SECTION 2*/
 
+.ground-section-two {
+   padding: 120px 0;
+}
+
+.visually-hidden {
+    position: fixed;
+    transform: scale(0);
+}
+
 .list-item {
    display: flex;
+   gap: 24px
+}
+
+.text {
+   width: calc((100% - 72px) / 4);
+
 }
  .section-two-title {
     font-weight: 500;
@@ -196,6 +209,7 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--navy-blue);
+    margin-bottom: 8px;
  }
 
  .content-text {
@@ -208,6 +222,7 @@ body {
  /*SECTION 3*/
  .ground-section-three {
     background: #F4F4FD;
+   padding: 120px 0;
  }
  .section-three-title {
     font-weight: 700;
@@ -216,15 +231,23 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    color: var(--navy-blue)
+    color: var(--navy-blue);
+    margin-bottom: 72px;
  }
 
  .list-foto {
    display: flex;
+   gap: 24px;
  }
 
 .fon_img {
    background-color: #fff;
+   width: calc((100% - 72px) / 4);
+   border-radius: 0px 0px 4px 4px;
+}
+
+.person-information {
+   padding: 32px 0;
 }
 
  .name {
@@ -232,7 +255,9 @@ body {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-    color: var(--navy-blue)
+    color: var(--navy-blue);
+    text-align: center;
+    margin-bottom: 8px;
  }
 
  .caption-name {
@@ -240,9 +265,14 @@ body {
     font-size: 16px;
     line-height: 1.5;
     color: var(--slate);
+    text-align: center;
  }
 
  /*SECTION 4*/
+
+ .ground-section-four {
+   padding: 120px 0 120px 0;
+ }
  .section-four-title {
     line-height: 1.11;
     text-align: center;
@@ -251,15 +281,27 @@ body {
     font-weight: 700;
     font-size: 36px;
     color: var(--navy-blue);
+    margin-bottom: 72px;
  }
 
  .list-images {
    display: flex;
    flex-wrap: wrap;
+   column-gap: 24px;
+   row-gap: 48px;
  }
 
+ .navigation {
+   width: calc((100% - 48px) / 3);
+ }
  .img-direction {
     background: url("path_to_image");
+ }
+
+ .infom-navigation {
+   padding: 32px 16px;
+   border: 1px solid #e7e9fc;
+   border-top: none;
  }
 
  .name-direction {
@@ -268,6 +310,7 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--navy-blue);
+   margin-bottom: 8px;
  }
 
  .direction-caption {
@@ -278,10 +321,11 @@ body {
  }
 
  /*FOOTER*/
-
- .logo-foot-cointainer {
-padding: 100px 1020px 100px 0;
+ .ground-footer {
+    background: var(--navy-blue);
+    padding: 100px 0;
  }
+
 
  .logo-footer {
     font-family: var(--second-family);
@@ -291,6 +335,8 @@ padding: 100px 1020px 100px 0;
     text-transform: uppercase;
     font-size: 18px;
     color: var(--iris);
+   display: inline-block;
+   margin-bottom: 16px;
  }
 
  .logofooter-span {
@@ -301,9 +347,7 @@ padding: 100px 1020px 100px 0;
     color:  #f4f4fd;
  }
 
- .ground-footer {
-    background: var(--navy-blue);
- }
+
  .text-footer {
     letter-spacing: 0.02em;
     font-size: 16px;
