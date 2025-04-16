@@ -83,6 +83,7 @@ body {
     font-size: 16px;
     color: #2e2f42; 
    padding: 24px 0 24px;
+   display: block;
  }
 .menu-nav:hover {
    color: #404bbf;
@@ -99,7 +100,6 @@ body {
 
 .header-nav {
    display: flex;
-   gap: 76px;
    align-items: center;
 }
 
@@ -126,13 +126,14 @@ body {
  .address-contacts {
    display: flex;
    gap: 40px;
-   padding: 24px 0;
+  
    
  }
 
  .header-container {
    display: flex;
    justify-content: space-between;
+   align-items: center;
  }
  
  /*SECTION 1*/
@@ -145,7 +146,10 @@ body {
      letter-spacing: 0.02em;
      font-size: 56px;
      color: #fff;
-   padding: 188px 0;
+     margin-left: auto;
+     margin-right: auto;
+     margin-bottom: 48px;
+   
      
   }
 
@@ -169,6 +173,8 @@ body {
     cursor: pointer;
     background-color: #4d5ae5;
     border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
   
    
  }
@@ -181,8 +187,7 @@ body {
  }
 
  .hero-container {
-   width: 1440px;
-   height: 600px;
+  
    
  }
 /*SECTION 2*/
@@ -364,6 +369,5 @@ body {
     font-size: 16px;
     line-height: 1.5;
     color: var(--cloud);
-    padding-top: 16px;
     width: 264px;
  }
